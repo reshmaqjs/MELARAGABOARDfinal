@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tune Creator</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .key{
+            color: white;
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            padding:8px;
+            margin:8px;
+            background-image: linear-gradient(to right, rgb(48, 82, 130) , rgb(72, 16, 103));
+            font-size:20px ;
+            width: 40px;
+            height:110px;
+            border-radius: 12px;
+            border-width: 3px;
+            border-color: black;
+        }
+        .key:hover{
+            background-image: linear-gradient(to right, rgb(78, 7, 68) , rgb(48, 82, 130));
+            height:100px;
+        }
+        
+        #sequenz{
+           height: 80px;
+           overflow: auto;
+           color:white;
+           font-size: 18px;
+        }
+        #replay{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #353565;
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+            font-size:20px ;
+            width: 100px;
+            height:30px;
+            color:white;
+            border-radius:10px;
+            margin-right:40px;
+        }
+        #replay:hover{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #6767e8;
+            background-image: linear-gradient(to right, rgb(113, 51, 147) , rgb(47, 35, 117));
+        }
+        #save{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #3c3c96;
+            
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+           
+            font-size:20px ;
+            width: 100px;
+            height:30px;
+            color:white;
+            border-radius:10px;
+            margin-right: 30px;
+        }
+        #save:hover{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #6767e8;
+            background-image: linear-gradient(to right, rgb(113, 51, 147) , rgb(47, 35, 117));
+        }
+        #discard{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #282882;
+            
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+            font-size:20px ;
+            width: 150px;
+            height:30px;
+            color:white;
+            border-radius:10px;
+        }
+        #discard:hover{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #6767e8;
+            background-image: linear-gradient(to right, rgb(113, 51, 147) , rgb(47, 35, 117));
+        }
+        .slider{
+            background-color:rgb(221, 144, 240);
+            width:23% ;
+            accent-color:rgb(131, 60, 134); 
+        }
+        #div1{
+            color: white;
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            
+        }
+        h1{
+            color: white;
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            
+        }
+        #div2{
+            color: white;
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            
+        }
+        hr{
+    color: #6d057c;
+    border-color: #6d057c;
+      }
+      #textseting{
+        color: white;
+        text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+      }
+        #instrument{
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+            font-size:20px ;
+            width: 100px;
+            height:30px;
+            color:white;
+        }
+       select{
+        background-color: rgb(53, 11, 76);
+            color:white;
+       }
+        select option{
+            background-color: rgb(53, 11, 76);
+            color:white;
+        }
+        #startbtn{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #282882;
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+            font-size:20px ;
+            width: 150px;
+            height:30px;
+            color:white;
+            border-radius:10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Create Your Tune</h1>
+<div id="div1">
+    <table id="table1">
+    <tr><td>
+    SELECT RAGA </td><td><select id="ragas" onclick="takeraganum()">
+           
+        </select>  </td>
+    </tr>
+    
+</table>
+<br><br>
+<br>
+    </div>
+    <div id="div2">
+        <p id="showRagaName"></p>
+    </div>
+    <div >
+        <br>
+        <div id="boardwindow"></div>
+       <center> <div id="keyset">
+        <br>
+        </div></center>
+        <div id="sequenz">
+        <br>
+        <br>
+        <br>
+        </div>
+        <!-- <div id="setfilename"></div> -->
+        <div id="advacedOptions"></div>
+    </div>
+    <script src="tunecreation.js"></script>
+</body>
+</html>

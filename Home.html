@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelaRaga Board</title>
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+
+  <div class="container"> 
+  <div class="melaragaHead">
+    <h1>MELARAGA BOARD</h1>
+  </div>
+ 
+  <div class="interactScreen">
+    <div class="selectoptionLeft"> <br><br>
+      <button class="tuneCreatSelect" onclick="SetTuneCreation()">Create Tune</button>
+      <br><br><br><br><br><br>
+      <button class="tunePlaySelect" onclick="SetPlayTune()"> Play Tune</button><br><br>
+      <br><br><br><br>
+      <button class="ConverterSelect" onclick="SetFileConversion()">Convert to Audio</button>
+    </div>
+    <div class="displaypartRight" id="displaypartRight">
+      <iframe class="displayframe" name="displayframe" id="displayframe" src="intro.html"  >      
+        </iframe>
+    </div>
+  </div>
+</div>
+<script src="homeOptionSelect.js"></script>
+</body>
+</html>
