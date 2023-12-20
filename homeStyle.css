@@ -1,0 +1,112 @@
+body{
+   
+    background: rgb(58, 11, 73);
+    background:  linear-gradient(90deg, rgba(43,6,55,1) 22%, rgba(60,7,74,1) 35%, rgba(35,14,55,1) 55%);  
+background-repeat: no-repeat;
+background-size: cover;
+}
+.cntainer{
+    /* background: #81a2e8; */
+    background: rgb(58, 11, 73);
+    background:  linear-gradient(90deg, rgba(43,6,55,1) 22%, rgba(60,7,74,1) 35%, rgba(35,14,55,1) 55%);  
+background-repeat: no-repeat;
+background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-block-start: 0%;
+}
+.melaragaHead{
+    background: rgb(58, 11, 73);
+    background:  linear-gradient(90deg, rgba(43,6,55,1) 22%, rgba(60,7,74,1) 35%, rgba(35,14,55,1) 55%);  
+background-repeat: no-repeat;
+background-size: cover;
+    text-shadow: 0 0 3px #f1eff0, 0 0 5px #e8e8ef;
+ font-size: 20px;
+ text-align: center;
+
+
+}
+.interactScreen{
+     height:600px;
+    
+    
+}
+.selectoptionLeft{
+width:15%;
+height: 100%;
+float: left;
+ background: rgb(43,6,55);
+background: linear-gradient(90deg, rgba(43,6,55,1) 22%, rgba(60,7,74,1) 35%, rgba(35,14,55,1) 55%);  
+
+background-repeat: no-repeat;
+background-size: cover;
+}
+.tuneCreatSelect{
+    background:none;
+    color: white;
+    border-radius: 12px;
+    text-shadow: 0 0 3px #4d0f2d, 0 0 5px #2f2f77;
+    border-color: black;
+    width: 150px;
+    height:60px;
+    font-size: 20px;
+    border-width: 3px;
+}
+.tuneCreatSelect:hover{
+    border-style:double;
+    border-width: 6px;
+    background-color: #6d057c;
+}
+.tunePlaySelect{
+    background:  none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #4d0f2d, 0 0 5px #2f2f77;
+    border-color: black;
+    width: 150px;
+    height:60px;
+    border-width: 3px;
+    font-size: 20px;
+}
+.tunePlaySelect:hover{
+    border-style:double;
+    border-width: 6px;
+    background-color: #6d057c;
+}
+.ConverterSelect{
+    background: none;
+    color: white;
+    border-radius: 12px;
+    text-shadow: 0 0 3px #4d0f2d, 0 0 5px #2f2f77;
+    border-color: black;
+    width: 150px;
+    height:60px;
+    border-width: 3px;
+    font-size: 20px;
+}
+.ConverterSelect:hover{
+    border-style:double;
+    border-width: 6px;
+    background-color:  #6d057c;
+}
+.displaypartRight{
+width:85%;
+height:100%;
+float:right;
+background: rgb(21,8,54);
+background: linear-gradient(90deg, rgba(21,8,54,1) 12%, rgba(60,7,74,1) 35%, rgba(21,8,54,1) 67%); 
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+image{
+    opacity: 0.5;
+}
+iframe{
+    border: 0;
+}
+
+.displayframe{
+ width:100%;
+ height:100%;
+}

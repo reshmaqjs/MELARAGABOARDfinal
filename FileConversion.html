@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file Converter</title>
+    <style>
+        body{
+            background: rgb(21,8,54);
+background: linear-gradient(90deg, rgba(21,8,54,1) 12%, rgba(60,7,74,1) 35%, rgba(21,8,54,1) 67%); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-shadow: 0 0 3px #561b37, 0 0 5px #181860;
+            font-size:20px ;
+            height:30px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        img{
+            opacity: 0.9;
+        }
+        #upload{
+            text-shadow: 0 0 3px #611d3e, 0 0 5px #131348;
+            font-size:20px ;
+            height:30px;
+            background-color: rgba(21,8,54,1);
+            
+        }
+        
+        #setInstrument{
+           
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+            font-size:20px ;
+            width: 100px;
+            height:30px;
+            color:white;
+        }
+        select{
+        background-color: rgb(53, 11, 76);
+            color:white;
+       }
+        select option{
+            background-color: rgb(53, 11, 76);
+            color:white;
+        }
+    
+    
+        #convertbtn{
+            color: white;
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            
+            background-image: linear-gradient(to right, rgb(53, 11, 76) , rgb(19, 11, 65));
+            font-size:20px ;
+            height:30px;
+            
+            border-radius:10px;
+            margin-right: 30px;
+        }
+        #convertbtn:hover{
+            text-shadow: 0 0 3px #f04d9c, 0 0 5px #6767e8;
+            background-image: linear-gradient(to right, rgb(113, 51, 147) , rgb(47, 35, 117));
+        }
+        .slider{
+            background-color:rgb(13, 23, 65);
+            width:23% ;
+            accent-color:rgb(131, 60, 134); 
+        }
+      #downloadbtn{
+        color: white;
+            text-shadow: 0 0 3px #5c1839, 0 0 5px #202042;
+            
+            background-image: linear-gradient(to right, rgb(98, 23, 90) , rgb(42, 29, 120));
+            font-size:20px ;
+            height:30px;
+            
+            border-radius:10px;
+            margin-right: 30px;
+      }
+      #playtest{
+        background-image:url("playbtn.jpeg");
+        background-size: cover;
+            height:65px;
+            width: 65px;
+            border-radius:10px;
+            margin-right: 30px;
+            border-width: 3px;
+            border-color: #320646;
+      }
+    </style>
+</head>
+<body>
+    <h1>sequence file to audio file converter</h1>
+    <br><br>
+    <div id="convertwindow">
+        <input type="file" name="fileinput" id="upload" accept=".mrbtx">
+        <br><br>
+        Set Instrument <select id="setInstrument" onchange="setInstrument()">
+            <option value="piano">piano</option>
+            <option value="guitar">guitar</option>
+        </select>
+        </div>
+        <br>
+        <div id="btndiv">
+            
+            <br><br>Set speed <input type='range' min='1' max='5' value='15' class='slider' id='slider'>
+            <br>
+            <br>
+            <button id="convertbtn" onclick="audioconvertor()">Make audio file</button>
+        </div>
+        <div id='download'>
+             
+        </div>
+        <script src="audioconversion.js"></script>
+</body>
+</html>
