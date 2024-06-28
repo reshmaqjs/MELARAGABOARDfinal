@@ -6,5 +6,5 @@
  
    http://localhost:8012/melaragaboardfinal/Home.html
 
-   #Here 8012 is the port number 
+   #Here 8012 is the port number of my server
    
